@@ -1,0 +1,21 @@
+.main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.askImage{
+  background-color: red;
+  width: 150px;
+  height: 150px;
+}
+
+.btn{
+  font-size: 30px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
