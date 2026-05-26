@@ -48,7 +48,12 @@ function App() {
             اي
           </Button>
         ) : (
-          <h2 style={{ color: "red" }}>احبك ❤️</h2>
+          <div style={{ textAlign: "center" }}>
+            <h2 style={{ color: "red" }}>احبك ❤️</h2>
+            <p style={{ marginTop: "10px", fontStyle: "italic", color: "#555" }}>
+              صنع بكل حب بواسطة مريم احسان لغيث
+            </p>
+          </div>
         )}
         <Button
           variant="contained"
