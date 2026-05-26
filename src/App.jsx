@@ -31,9 +31,25 @@ function App() {
         alt="askImage"
         className="askImage"
       />
-      <h1>
-        {yesClicked ? "يلا نعيشها سوا ❤️" : "عندك مجال 40 سنه نعيشها سوية؟"}
-      </h1>
+
+      {/* Always show the initial question */}
+      {!yesClicked && (
+        <h1>عندك مجال 40 سنه نعيشها سوية؟</h1>
+      )}
+
+      {/* Show the answer only after clicking yes */}
+      {yesClicked && (
+        <div style={{ textAlign: "center" }}>
+          <h1>يلا نعيشها سوا ❤️</h1>
+          <h2 style={{ color: "red", marginTop: "15px" }}>
+            احبك ❤️
+          </h2>
+          <p style={{ marginTop: "10px", fontStyle: "italic", color: "#555" }}>
+            صنع بكل حب بواسطة مريم احسان لغيث
+          </p>
+        </div>
+      )}
+
       <div className="btn">
         {!yesClicked ? (
           <Button
@@ -47,14 +63,8 @@ function App() {
           >
             اي
           </Button>
-        ) : (
-          <div style={{ textAlign: "center" }}>
-            <h2 style={{ color: "red" }}>احبك يلا نعيشها سوية❤️</h2>
-            <p style={{ marginTop: "10px", fontStyle: "italic", color: "#555" }}>
-              صنع بكل حب بواسطة مريم احسان لغيث
-            </p>
-          </div>
-        )}
+        ) : null}
+
         <Button
           variant="contained"
           color="error"
