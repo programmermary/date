@@ -49,7 +49,7 @@ function App() {
           </Button>
         ) : (
           <div style={{ textAlign: "center" }}>
-            <h2 style={{ color: "red" }}>احبك ❤️</h2>
+            <h2 style={{ color: "red" }}>احبك يلا نعيشها سوية❤️</h2>
             <p style={{ marginTop: "10px", fontStyle: "italic", color: "#555" }}>
               صنع بكل حب بواسطة مريم احسان لغيث
             </p>
