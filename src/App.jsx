@@ -34,7 +34,7 @@ function App() {
 
       {/* Always show the initial question */}
       {!yesClicked && (
-        <h1>عندك مجال 40 سنه نعيشها سوية؟</h1>
+        <h1>عندك مجال 60 سنه نعيشها سوية؟</h1>
       )}
 
       {/* Show the answer only after clicking yes */}
